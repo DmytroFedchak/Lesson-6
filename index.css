@@ -1,0 +1,123 @@
+.nav {
+    display: flex;
+    justify-content: center;
+}
+.top {
+    margin: 5px;
+    width: 15%;
+    border: 2px solid red;
+    background-color: antiquewhite;
+    display: inline-block;
+    text-align: center;
+} 
+.AfterTop {
+    display: flex;
+    justify-content: center;
+}
+.TextTop {
+    width: 20%;
+    margin: 5px;
+    border: 2px solid red;
+    background-color: antiquewhite;
+    text-align: center;
+}
+.centre {
+    justify-content: center;
+    display: flex;
+}
+.text {
+    margin: 5px;
+    padding: 5px;
+    height: 700px;
+    overflow: scroll;
+    border: 2px solid red;
+    background-color: antiquewhite;
+    text-align: auto;
+    display: inline-block;
+}
+.bottom {
+    justify-content: center;
+    display: flex;
+}
+.botText {
+    margin: 5px;
+    padding: 5px;
+    height: 200px;
+    overflow: scroll;
+    border: 2px solid red; 
+    text-align: auto;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+}
+@media screen and (min-width: 270px) and (max-width: 410px) {
+    .nav {
+        flex-wrap: wrap;
+        
+    } 
+    .AfterTop{
+        flex-direction: column;
+    }
+    .AfterTop div {
+        width: calc(100% - 15px);
+    }
+
+    .centre {
+        flex-direction: column;
+    }
+    .bottom{
+        flex-direction: column;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 410px) and (max-width: 510px){
+    .centre {
+        flex-direction: column;
+    }
+    .bottom{
+        flex-direction: column;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 510px) and (max-width: 768px){
+    .centre {
+        flex-direction: column;
+    }
+    .bottom{
+        flex-direction: column;
+        height: 500px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .centre {
+        flex-direction: column;  
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px ) {
+    .nav {
+        font-size: 20px;
+    }
+    .AfterTop div {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .nav {
+        font-size: 25px;
+    }
+    .AfterTop div {
+        font-size: 25px;
+    }
+    .text {
+        font-size: 25px;
+    }
+    .botText {
+        font-size: 25px;
+    }
+    .footer{
+        font-size: 25px;
+    }
+}
